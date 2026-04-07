@@ -1,0 +1,160 @@
+/*
+ * Arcada Custom Styles
+ * Additional custom styles for Arcada WordPress theme
+ */
+
+/* Custom Hero Section */
+.custom-hero {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    padding: 40px 20px;
+}
+
+.custom-hero .hero-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.custom-hero .hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.custom-hero .hero-subtitle {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* Custom Product Cards */
+.custom-product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+}
+
+.custom-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.custom-product-card .product-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+}
+
+/* Custom Buttons */
+.btn-custom {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-custom-primary {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-custom-primary:hover {
+    background: #0575b0;
+    transform: translateY(-2px);
+}
+
+.btn-custom-secondary {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-custom-secondary:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+/* Custom Form Styles */
+.custom-form input,
+.custom-form textarea,
+.custom-form select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.custom-form input:focus,
+.custom-form textarea:focus,
+.custom-form select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Custom Widget Styles */
+.custom-widget {
+    padding: 20px;
+    background: var(--light-gray);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.custom-widget-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+/* Custom Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .custom-hero .hero-title {
+        font-size: 32px;
+    }
+    
+    .custom-hero .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .custom-product-card {
+        margin-bottom: 20px;
+    }
+}
